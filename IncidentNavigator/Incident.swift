@@ -14,12 +14,12 @@ enum IncidentState: String, Codable, Equatable, CaseIterable {
     case Resolved
 }
 
-class Incident: Codable, ObservableObject {
+class Incident: Codable {
     var code: String!
     var name: String!
-    @Published var desc: String!
-    @Published var components: [String]!
-    @Published var status: IncidentState = .Investigating
+    var desc: String!
+    var components: [String]!
+    var status: IncidentState = .Investigating
     
     init(code: String, name: String, desc: String, components: [String], status: IncidentState = .Investigating) {
         self.code = code
@@ -27,32 +27,6 @@ class Incident: Codable, ObservableObject {
         self.desc = desc
         self.components = components
         self.status = status
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        code = try container.decode(String.self, forKey: .code)
-        name = try container.decode(String.self, forKey: .name)
-        desc = try container.decode(String.self, forKey: .desc)
-        components = try container.decode(Array<String>.self, forKey: .components)
-        status = try container.decode(IncidentState.self, forKey: .status)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(code, forKey: .code)
-        try container.encode(name, forKey: .name)
-        try container.encode(desc, forKey: .desc)
-        try container.encode(components, forKey: .components)
-        try container.encode(status, forKey: .status)
-    }
-    
-    enum CodingKeys: CodingKey {
-        case code
-        case name
-        case desc
-        case components
-        case status
     }
 }
 
