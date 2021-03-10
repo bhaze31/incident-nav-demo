@@ -12,7 +12,6 @@
 		8EC741F725F93D76007DBAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC741F625F93D76007DBAE8 /* Assets.xcassets */; };
 		8EC741FA25F93D76007DBAE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC741F925F93D76007DBAE8 /* Preview Assets.xcassets */; };
 		8EC7420325F93D85007DBAE8 /* Incident.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7420225F93D85007DBAE8 /* Incident.swift */; };
-		8EC7420625F94413007DBAE8 /* IncidentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7420525F94413007DBAE8 /* IncidentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		8EC741F925F93D76007DBAE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EC741FB25F93D76007DBAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC7420225F93D85007DBAE8 /* Incident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incident.swift; sourceTree = "<group>"; };
-		8EC7420525F94413007DBAE8 /* IncidentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 			children = (
 				8EC741F225F93D73007DBAE8 /* IncidentNavigatorApp.swift */,
 				8EC741F425F93D73007DBAE8 /* ContentView.swift */,
-				8EC7420525F94413007DBAE8 /* IncidentsView.swift */,
 				8EC7420225F93D85007DBAE8 /* Incident.swift */,
 				8EC741F625F93D76007DBAE8 /* Assets.xcassets */,
 				8EC741FB25F93D76007DBAE8 /* Info.plist */,
@@ -146,7 +143,6 @@
 			files = (
 				8EC741F525F93D73007DBAE8 /* ContentView.swift in Sources */,
 				8EC7420325F93D85007DBAE8 /* Incident.swift in Sources */,
-				8EC7420625F94413007DBAE8 /* IncidentsView.swift in Sources */,
 				8EC741F325F93D73007DBAE8 /* IncidentNavigatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
